@@ -1,5 +1,12 @@
 # RAG with Query Rewriting
 
+## Overview
+
+A small RAG exercise that rewrites short slang in a question before retrieval, for example expanding `pdb` to pod disruption budget. The question first passes through a rewrite map and is then matched by word overlap through `POST /ask`, so retrieval works on the full term rather than the abbreviation a person typed.
+
+- **Built with:** Python, pytest, GitHub Actions
+- **Scope:** Local laptop lab from an intermediate RAG track; it calls no hosted model and makes no production changes.
+
 <!-- project-guide:start -->
 ## Project guide
 
